@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Finance Logger</title>
+   <link rel="stylesheet" href="./styles.css">
+   
+</head>
+<body>
+   
+   <div class="wrapper">
+
+      <h1>Finance Logger</h1>
+   
+      <!-- List -->
+      <ul class="item_list">
+         
+      </ul>
+   </div>
+
+   <footer>
+      <form class="new_items">
+         <div class="field">
+            <label>Type:</label>
+            <select id="type">
+               <option value="Payment">Payment</option>
+               <option value="Invoice">Invoice</option>
+            </select>
+         </div>
+         <div class="field">
+            <label>To / From :</label>
+            <input type="text" id="tofrom">
+         </div>
+         <div class="field">
+            <label>Details :</label>
+            <input type="text" id="details">
+         </div>
+         <div class="field">
+            <label>Amount (R) :</label>
+            <input type="number" id="amount">
+         </div>
+
+         <button>Add</button>
+      </form>
+   </footer>
+
+   <script type="module" src="./index.js" defer></script>
+
+</body>
+</html>
